@@ -21,7 +21,7 @@ export default function Categories() {
   //Fetch data with UseEffect
   useEffect(() => {
     getCategories();
-  })
+  }, []);
 
   return (
     <>
@@ -34,7 +34,7 @@ export default function Categories() {
             <CategoryTile
               key={category.id}
               name={category.name}
-              image={category.image} />
+              image={`${import.meta.env.VITE_RECIPES_API}/${category.image}`} />
 
           ))}
 
