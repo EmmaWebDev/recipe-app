@@ -2,13 +2,14 @@ import React from 'react'
 import BottomNavigation from '../components/BottomNavigation'
 
 const NewRecipe = () => {
-  return (
-    <>
+  return
+  <>
     <div>NewRecipe</div>
-    <BottomNavigation/>
-    </>
-    
-  )
+
+    <BottomNavigation />
+  </>
+
+
 }
 
 export default NewRecipe
